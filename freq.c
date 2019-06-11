@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-int n,flag=0,max=0,var;
+int n,flag=0,max=99999,var;
 scanf("%d",&n);
 int a[n];
 int freq[n];
@@ -19,7 +19,7 @@ freq[a[i]]++;
 }
  for(int i=0;i<n;i++)
  {
-   if(freq[i]>max)
+   if(freq[i]<max)
    {
      max=freq[i];
      var=i;
